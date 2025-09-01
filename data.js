@@ -49,6 +49,8 @@ console.log(noises)
 
 animal['noises'] = noises
 
+animal.noises.push("howllooo")
+
 /* *******************************************************************
  * Step 4 - Review
  *
@@ -76,13 +78,58 @@ animal['noises'] = noises
 // Step 6 - A Collection of Animals //////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
+var animals = []
 
+animals.push(animal)
+
+console.log(animal)
+
+var duck = {
+  species: 'duck', 
+  name: 'Jerome', 
+  noises: ['quack', 'honk', 'sneeze', 'woosh']
+}
+
+animals.push(duck)
+
+console.log(animals)
+
+var cat = {
+  species: 'cat',
+  name: 'Biscuit',
+  noises: ['Meow', 'Nya', 'Nyaahhoaa']
+}
+
+var fish = {
+  species: 'fish',
+  name: "Bubbles",
+  noises: ['Blub Blub', 'Glub', 'Buhb Buhb']
+}
+
+animals.push(cat)
+
+animals.push(fish)
+
+console.log(animals)
 
 //////////////////////////////////////////////////////////////////////
 // Step 7 - Making Friends ///////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
+var friends = []
 
+//I choose an array because arrays are good for holding a list of similar indexes
+
+function getRandom (animals){
+  return Math.random()
+}
+// when in doubt, create a var that hold info
+
+var nameRandom = getRandom(animals)
+
+friends.push(animals[nameRandom].name)
+
+console.log(friends)
 
 /**
  * Nice work! You're done Part 1. Pat yourself on the back and
