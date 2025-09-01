@@ -82,7 +82,7 @@ var animals = []
 
 animals.push(animal)
 
-console.log(animal)
+// console.log(animal)
 
 var duck = {
   species: 'duck', 
@@ -92,7 +92,7 @@ var duck = {
 
 animals.push(duck)
 
-console.log(animals)
+// console.log(animals)
 
 var cat = {
   species: 'cat',
@@ -110,18 +110,26 @@ animals.push(cat)
 
 animals.push(fish)
 
-console.log(animals)
+// console.log(animals)
 
 //////////////////////////////////////////////////////////////////////
 // Step 7 - Making Friends ///////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
+
+/**
+ * I: create a data stucture for the Friends variable (should hold list),
+ * create a function called getRandom that takes 'animals' array as a parameter,
+ * O: getRandom should return a random index from the animals array
+ * C: use Math.random()
+ * E:
+ */
 var friends = []
 
 //I choose an array because arrays are good for holding a list of similar indexes
 
 function getRandom (animals){
-  return Math.random()
+  return Math.floor(Math.random() * animals.length) 
 }
 // when in doubt, create a var that hold info
 
@@ -129,7 +137,16 @@ var nameRandom = getRandom(animals)
 
 friends.push(animals[nameRandom].name)
 
+// console.log(friends)
+
+// animals[0]['friends'] = friends
+
+// console.log(animals)
+
+console.log(nameRandom)
+
 console.log(friends)
+
 
 /**
  * Nice work! You're done Part 1. Pat yourself on the back and
