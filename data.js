@@ -139,7 +139,7 @@ friends.push(animals[nameRandom].name)
 
 // console.log(friends)
 
-// animals[0]['friends'] = friends
+animals[0]['friends'] = friends
 
 // console.log(animals)
 
